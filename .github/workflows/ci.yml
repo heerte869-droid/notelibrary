@@ -43,12 +43,17 @@ jobs:
   macos:
     runs-on: macos-15
     timeout-minutes: 35
+    env:
+      # The runner defaults to Xcode 16.4; the pinned Swift packages need Swift 6.2.
+      DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - name: Show installed Xcode
-        run: xcodebuild -version
+      - name: Show selected toolchain
+        run: |
+          xcodebuild -version
+          xcrun swift --version
       - name: Offline regression tests
         run: ./scripts/test.sh
       - name: Universal local build

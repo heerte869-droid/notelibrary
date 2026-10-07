@@ -1,10 +1,8 @@
 version: 2
+# Vendor/OpenAI is a patched source snapshot, not a standalone Swift package.
+# Review SDK and Xcode Package.resolved updates together; see Vendor/OpenAI/UPSTREAM.md.
 updates:
   - package-ecosystem: github-actions
     directory: /
-    schedule:
-      interval: monthly
-  - package-ecosystem: swift
-    directory: /Vendor/OpenAI
     schedule:
       interval: monthly
