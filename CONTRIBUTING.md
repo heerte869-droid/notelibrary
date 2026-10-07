@@ -4,7 +4,7 @@ Thank you for helping improve NoteLibrary. Bug reports, documentation, translati
 
 ## Set up
 
-Use Xcode 27 with its macOS SDK on a Mac that meets Xcode's system requirements. The app's deployment target is macOS 15. From the repository root:
+Use Xcode 26.3 or later with its macOS SDK on a Mac that meets Xcode's system requirements. The app's deployment target is macOS 15. From the repository root:
 
 ```sh
 ./scripts/build.sh

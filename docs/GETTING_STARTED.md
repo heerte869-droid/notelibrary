@@ -8,7 +8,7 @@ NoteLibrary is a native macOS application. The current interface is in Simplifie
 
 Requirements:
 
-- A Mac that meets Xcode 27's system requirements, with Xcode 27 and its macOS SDK installed. Other Xcode versions have not been verified.
+- A Mac that meets Xcode 26.3's system requirements, with Xcode 26.3 or later and its macOS SDK installed. The pinned dependencies require Swift 6.2 or later.
 - macOS 15 or later to run the resulting application; this deployment target is separate from the build machine's requirements.
 
 Download or clone the repository, then run these commands from its root:

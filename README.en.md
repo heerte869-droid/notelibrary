@@ -38,7 +38,7 @@ Export a note as **PDF, Word, Markdown, or a self-contained HTML file**. Choose 
 
 ## Get started
 
-Build this source preview with **Xcode 27** on a Mac that meets Xcode's system requirements. The resulting app targets macOS 15 and later.
+Build this source preview with **Xcode 26.3 or later** on a Mac that meets Xcode's system requirements. The resulting app targets macOS 15 and later.
 
 ```sh
 ./scripts/build.sh
