@@ -54,6 +54,7 @@ jobs:
         run: |
           xcodebuild -version
           xcrun swift --version
+          python3 --version
       - name: Offline regression tests
         run: ./scripts/test.sh
       - name: Universal local build

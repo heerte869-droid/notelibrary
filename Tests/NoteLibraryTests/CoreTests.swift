@@ -2608,10 +2608,20 @@ final class ReplyLatencyTests: XCTestCase {
     @MainActor private func client(_ root: URL) async throws -> CodexClient {
         try FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         let fixture = try XCTUnwrap(Bundle(for: Self.self).url(forResource: "fake-codex-server", withExtension: "py", subdirectory: "Fixtures"))
+        let script = root.appendingPathComponent("fake-codex-server.py")
+        let diagnostics = root.appendingPathComponent("offline-fixture.stderr")
         let executable = root.appendingPathComponent("codex-fixture")
-        try FileManager.default.copyItem(at: fixture, to: executable)
+        try FileManager.default.copyItem(at: fixture, to: script)
+        func quote(_ value: String) -> String { "'" + value.replacingOccurrences(of: "'", with: "'\\''") + "'" }
+        let launcher = "#!/bin/sh\nexec /usr/bin/env python3 \(quote(script.path)) \"$@\" 2>\(quote(diagnostics.path))\n"
+        try launcher.write(to: executable, atomically: true, encoding: .utf8)
         try FileManager.default.setAttributes([.posixPermissions: 0o700], ofItemAtPath: executable.path)
-        let client = CodexClient(); try await client.connect(path: executable.path, workspace: root)
+        let client = CodexClient()
+        do { try await client.connect(path: executable.path, workspace: root) }
+        catch {
+            let detail = (try? String(contentsOf: diagnostics, encoding: .utf8)) ?? ""
+            throw AppFailure(message: "Offline fixture connection failed: \(error.localizedDescription)\n\(detail.suffix(2000))")
+        }
         return client
     }
     @MainActor func testRealRPCReusesImageThreadAndInvalidatesFailure() async throws {

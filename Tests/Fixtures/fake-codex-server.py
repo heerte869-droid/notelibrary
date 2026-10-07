@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """Offline app-server fixture. Never reads accounts or sends network requests."""
 import json,sys,threading,time,pathlib
 lock=threading.Lock(); counter=0; turns={}
