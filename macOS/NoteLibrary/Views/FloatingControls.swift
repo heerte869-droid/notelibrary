@@ -215,18 +215,21 @@ struct ReaderActionsPanel: View {
             .onAppear { focused = true }
             .onChange(of: page) { _, _ in center.popover?.size.height = height }
             .animation(reduced || model.library.settings.reduceMotion ? nil : .easeOut(duration: 0.12), value: page)
-            .onMoveCommand { direction in
-                if direction == .left, page != "root" { navigate("root"); return }
-                if direction == .right, let highlighted, ["organize", "ai"].contains(highlighted) { navigate(highlighted); return }
-                guard direction == .down || direction == .up else { return }
-                let index = highlighted.flatMap { targets.firstIndex(of: $0) }
-                let next = direction == .down ? index.map { ($0 + 1) % targets.count } ?? 0 : index.map { ($0 + targets.count - 1) % targets.count } ?? targets.count - 1
-                highlighted = targets[next]
-            }
+            .onMoveCommand { move($0) }
             .onKeyPress(.return) { guard let highlighted else { return .ignored }; perform(highlighted); return .handled }
             .onKeyPress(.space) { guard let highlighted else { return .ignored }; perform(highlighted); return .handled }
             .onKeyPress(.escape) { center.dismiss(restoreFocus: true); return .handled }
             .accessibilityElement(children: .contain).accessibilityLabel(page == "root" ? "笔记操作" : title)
+    }
+    private func move(_ direction: MoveCommandDirection) {
+        if direction == .left, page != "root" { navigate("root"); return }
+        if direction == .right, let highlighted, ["organize", "ai"].contains(highlighted) { navigate(highlighted); return }
+        guard direction == .down || direction == .up else { return }
+        let index = highlighted.flatMap { targets.firstIndex(of: $0) }
+        let next: Int
+        if direction == .down { next = index.map { ($0 + 1) % targets.count } ?? 0 }
+        else { next = index.map { ($0 + targets.count - 1) % targets.count } ?? targets.count - 1 }
+        highlighted = targets[next]
     }
     private func quick(_ id: String, title: String, icon: String, selected: Bool) -> some View {
         Button { perform(id) } label: {

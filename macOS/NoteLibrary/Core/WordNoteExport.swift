@@ -30,7 +30,16 @@ enum ExportOfficeMath {
         case "mtable":
             let rows = children.filter { $0.name == "mtr" || $0.name == "mlabeledtr" }
             let count = max(1, rows.map { $0.children.count }.max() ?? 1)
-            let rowsXML = try rows.map { row in "<m:mr>" + (try (0..<count).map { i in "<m:e>" + (i < row.children.count ? try node(row.children[i]) : "") + "</m:e>" }.joined()) + "</m:mr>" }.joined()
+            let rowElements: [String] = try rows.map { row -> String in
+                let cells: [String] = try (0..<count).map { i -> String in
+                    let content: String
+                    if i < row.children.count { content = try node(row.children[i]) }
+                    else { content = "" }
+                    return "<m:e>\(content)</m:e>"
+                }
+                return "<m:mr>\(cells.joined())</m:mr>"
+            }
+            let rowsXML = rowElements.joined()
             return "<m:m><m:mPr><m:mcs><m:mc><m:mcPr><m:count m:val=\"\(count)\"/><m:mcJc m:val=\"center\"/></m:mcPr></m:mc></m:mcs></m:mPr>\(rowsXML)</m:m>"
         case "mtd": return try all()
         case "mfenced": return "<m:d><m:dPr><m:begChr m:val=\"\(ExportMarkup.xml(n.attributes["open"] ?? "("))\"/><m:endChr m:val=\"\(ExportMarkup.xml(n.attributes["close"] ?? ")"))\"/></m:dPr><m:e>\(try all())</m:e></m:d>"
