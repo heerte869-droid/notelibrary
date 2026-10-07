@@ -1,0 +1,10 @@
+Use case: text-localization. Produce a Simplified Chinese edition of this NoteLibrary marketing hero.
+Keep the composition, app previews, colors, lighting, shadows, paper sheets, evergreen arrow and all original in-app Chinese interface pixels exactly as they are. Change ONLY the surrounding English promotional text to the exact Chinese strings below, rebalancing typography slightly to fit naturally at the same positions. Do not change the NoteLibrary wordmark or the PDF / Word / Markdown / HTML format names.
+Replace the two-line large headline with:
+"把零散资料"
+"变成你的学习笔记本。"
+Replace the smaller line below with:
+"原生 macOS · AI 服务由你选择"
+Replace the six labels left to right with:
+"导入资料" "AI 整理" "阅读与对照" "卡片复习" "搜索与生图" "多格式导出"
+Use beautiful precise Simplified Chinese sans-serif typography, strong dark-green weight for the headline, aligned consistent baseline for feature labels, no decorative handwriting. Leave the generous upper-right space untouched. Do not add any other slogans, a new logo, URL, user details, model names, or claims. This is strictly a localization of the existing finished marketing artwork.

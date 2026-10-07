@@ -1,0 +1,72 @@
+# macOS and editor state
+.DS_Store
+._*
+.idea/
+.vscode/
+*~
+*.swp
+
+# Build products and per-user Xcode state
+DerivedData/
+build/
+.build/
+.swiftpm/
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xcresult/
+*.xcarchive/
+*.dSYM/
+*.app/
+*.ipa
+*.dmg
+
+# Local secrets and signing material
+.env
+.env.*
+!.env.example
+Credentials/
+api-keys.json
+*.keychain
+*.keychain-db
+*.pem
+*.key
+*.p12
+*.pfx
+*.mobileprovision
+*.provisionprofile
+
+# Application data and private verification output
+Library.sqlite*
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.db-wal
+*.db-shm
+AI Workspace/
+Snapshots/
+Backups/
+QAData/
+/private/
+artifacts/
+*.log
+*.trace/
+*-QA-*/
+*_QA_20*.json
+synthetic-wire-*.json
+diagnostic-*-request.json
+diagnostic-*-response.txt
+live-*-results.json
+
+# Python tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Agent state belongs outside the public repository
+.codex/
+.claude/

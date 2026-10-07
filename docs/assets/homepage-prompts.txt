@@ -1,0 +1,26 @@
+Generation method: built-in image generation and localized edition.
+Input: homepage.png, a render of the real app with original synthetic examples.
+
+ENGLISH HOMEPAGE HERO
+Use case: ads-marketing / compositing.
+Create a second polished promotional image for NoteLibrary, focused on its BOOKSHELF HOME SCREEN. Landscape format about 3:2. This is the lead image for a GitHub README.
+Input image: the actual native NoteLibrary homepage view with six original synthetic example notebooks. Use it as a faithful large screen insert. Preserve the real Chinese interface, its complete left navigation, book covers, import button, notebook actions and search. This is not a UI redesign.
+
+Art direction: a crisp front-facing product campaign. Warm ivory background, deep evergreen type, restrained soft mint halo, a very subtle paper texture. A large perfectly FRONT-FACING, flat rectangular app preview dominates the composition, with straight parallel edges and only a delicate realistic shadow. Absolutely NO angled/side view, diagonal screen, perspective warp, tablets, laptop mockup, stacked windows, floating feature cards, or huge plants. The user needs to see the whole app and its shelf at a glance.
+Layout: compact NoteLibrary wordmark at top-left, small native macOS line at top-right. One confident headline above the large centrally aligned homepage preview. The app fills most of the width. Keep the original screenshot's proportions. Cropped lower card content in the source is the actual viewport; do not invent more UI or text below it. Preserve the neat colorful notebook covers and the real small sidebar logo inside the app; no new logo outside the screenshot.
+Text outside the app, verbatim:
+"NoteLibrary"
+"Everything you learn, one bookshelf."
+"Native macOS · Your choice of AI"
+Bottom concise line, verbatim:
+"Import materials · Organize notebooks · Pick up where you left off"
+Typography: clean contemporary sans serif, dark evergreen, large readable headline, restrained supporting line. No additional copy, fake awards, statistics, ratings, model logos, private content or URLs. Make it elegant, clear and inviting, visually consistent with a calm green-and-ivory note-taking app. Only the home screen is featured in this image.
+
+CHINESE HOMEPAGE HERO
+Use case: text-localization.
+Create the Simplified Chinese edition of this NoteLibrary bookshelf homepage promotional image. Preserve the flat FRONT-FACING composition, exact Chinese app preview, six colored book covers, small bookshelf logo, brand name, mint and ivory background, margins and shadows. Change only the English promotional copy OUTSIDE the application screen:
+Top-right: "原生 macOS · AI 服务由你选择"
+Large headline: "把学到的东西，收进自己的书架。"
+Bottom line: "导入资料 · 按章节整理 · 随时继续阅读"
+Keep "NoteLibrary" unchanged. Beautiful modern Chinese sans-serif, confident readable headline, careful spacing. Do not add any new slogans, text, UI controls, private information or URLs. Do not rotate the app screen or invent additional content. The native Chinese interface remains unchanged.
+

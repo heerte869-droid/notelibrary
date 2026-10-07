@@ -1,0 +1,55 @@
+# Chinese feature campaign prompts
+
+These images use native NoteLibrary demo views and wholly synthetic handwritten pages. They are marketing compositions, not unmodified screenshots.
+
+## Photo to notes
+
+Use case: Chinese product-marketing illustration, reference-guided compositing. Create a premium landscape 16:10 feature poster for NoteLibrary, a native macOS notes app whose interface is SIMPLIFIED CHINESE. This is a visual explanation of an existing workflow, not a redesign.
+Reference image 1 is the real native chat interface. Preserve its white surfaces, emerald accents, thin dividers, left library sidebar, rounded message composer and NoteLibrary brand. Reference image 2 is the actual reader/result showing the synthetic water-cycle note. Reference image 3 gives the existing campaign's warm ivory/mint/green visual language.
+Main headline exact: “一叠手写笔记，变成清晰的章节。”
+Top-left small NoteLibrary brand with the existing green books logo.
+Make the image visibly about BATCH PHOTO UPLOAD: on the left, a beautiful fan/stack of 7–9 genuine-looking smartphone photographs of original handwritten classroom notes on ruled and squared paper. Subjects: water cycle, systems, stocks and flows, a small simple graph, equations, short Chinese marginal notes. Photographic paper texture, a little perspective and soft natural shadow. They must look like different actual handwritten pages, NOT blank document icons. They are wholly synthetic: no student names, school identifiers, dates or copied private text.
+Center: a LARGE FRONT-FACING NoteLibrary chat window occupying much of the frame. The app screenshot is an anchor, not a tiny tilted decoration. Show several small image attachment thumbnails above the message composer and the concise user message “把这些笔记按主题整理，保留公式和图示。” Keep the real app's Chinese UI labels and layout; do not add new buttons or a fake feature. Show a concise normal assistant message “按主题整理为章节，并保留原稿供对照。” Use no completion time or upload limits.
+Right: a neat finished chapter/note panel based on the real reader image: clear headings “水循环”“储存与流量”“系统边界”, a readable short note and a clean water-cycle diagram. Show visual transformation, not a pile of unrelated screens.
+Three small stage labels ONLY: “上传照片” over the photographs, “对话整理” over the chat, “生成笔记” over the result, connected by fine curved emerald arrows. Strong hierarchy, plentiful negative space, crisp Chinese text, editorial quality, soft daylight, ivory background with a slight paper texture. Functional screenshots remain nearly flat and legible. Depth from the paper photos and restrained shadows, not dramatic perspective.
+Do not add any other marketing slogans, badges, testimonials, star counts, fake metrics, excessive sparkle, English marketing words, stock people, extra laptop/device frames or watermark. No impossible promises. Preserve actual product identity.
+
+## Chat explanation
+
+Use case: premium Chinese product feature poster, reference-guided compositing. Landscape 16:10. Product is NoteLibrary for macOS, Simplified Chinese interface. Reference image 1 is the actual native ChatView; preserve its visual identity, sidebar navigation, emerald brand, rounded composer, typography, spacing and simple message structure. Reference image 2 is the actual water-cycle reading note. Reference image 3 gives the established warm ivory/soft mint/forest green campaign design.
+Headline exact: “不只存下来，也能接着问。”
+Small NoteLibrary logo top-left, using the provided logo.
+Composition: a large crisp nearly front-facing native chat window occupies about 70 percent of the canvas, well-lit, on an ivory paper-like background. The actual chat content is the central story and must remain clearly Chinese. Make the concise user question legible: “为什么降雨量不等于河流径流量？” Below, a calm structured assistant explanation, using these short paragraphs:
+“降雨后，水会沿地表流走，也会渗入土壤、暂时留在植物中，或重新蒸发。”
+“储存：此刻有多少水。流量：每段时间有多少水进出。”
+“因此，降雨量不等于河流径流量。”
+Below the answer retain the existing source-note card based on the screenshot, labeled “参考笔记” and “水循环：从一滴水理解系统”. Do not fabricate web citations or model execution claims.
+On the right, one restrained inset/paper panel from the real note, showing its original simple water-cycle diagram, connected by a fine green line to the source-note card. This inset should make the relationship between asking and the existing note obvious. A small synthetic notebook and pencil in the background can add material warmth but must not dominate.
+Only two small external labels allowed: “围绕笔记提问” and “回到笔记继续读”. No subtitle or extra slogans. Avoid English marketing text, star counts, badges, claims of infinite context, instant completion or universal model reliability. No people, no unnecessary device shell, no decorative 3D icons. Keep Chinese text accurate, spacious, editorial and useful. Maintain the actual UI rather than inventing new buttons. Demo content is original and contains no private data.
+
+## Reading and review, initial
+
+Use case: ads-marketing, compositing.
+Create a polished Chinese promotional illustration for NoteLibrary, a real native macOS study-notebook app. Landscape 16:10, high-resolution, elegant editorial product campaign.
+Inputs: image 1 is the actual reader view; image 2 is the actual concept-card view; image 3 is the existing Chinese bookshelf campaign for the established ivory/forest-green style and actual book-shaped brand mark. Preserve real UI geometry and Chinese labels when placing the two app crops; do not invent a new app skin.
+Primary story: original page → clear reading → one concept at a time. Main headline exactly: “读懂一页，再记住一个知识点。”
+Composition: a large clean front-facing reader crop featuring its water-cycle diagram in the left/middle, next to a narrow realistic photograph of a synthetic handwritten water-cycle page; to the right, three handsome legible concept-card crops from the reference, in an orderly aligned stack with slight paper overlap. This is a marketing composition around existing views, not a changed UI. A very fine green connector from reading to cards makes the flow clear. All meaningful UI stays flat enough to read, not steeply tilted. Soft daylight, very restrained shadows, subtle paper grain, ample clear whitespace. White and pale mint panels against warm ivory; deep green headlines. No neon gradients or decorative glow.
+Brand at top-left: “NoteLibrary” with the same bookshelf icon as reference 3. Only additional campaign labels exactly: “原稿对照”, “专注阅读”, “知识卡片”. Retain sensible Chinese text visible in inserted actual UI. No English slogans. No fictional claims, numbers, achievements, star counts, testimonials, device frames, people or private data. The hand-written page is entirely invented generic educational content, with no name, school, date or identifiable handwriting. It should feel tangible and useful, not busy.
+
+
+## Reading and review, cleanup
+
+Refine this Chinese NoteLibrary promotional graphic with only these small removals. Preserve the headline exactly: “读懂一页，再记住一个知识点。” Preserve the NoteLibrary logo, actual Chinese reader interface, central water-cycle handwritten example, three knowledge cards, layout, proportions, soft ivory and emerald palette, desktop daylight and quality. Remove the two decorative handwritten slogans: the top-right “让知识，在阅读中生长。” and the bottom-left “从阅读到思考，让知识自然沉淀。”, including their decorative underline strokes, and restore natural clean background in their place. Remove the stack of three books in the bottom-right corner and restore the tabletop/background. Do not add any new words, slogans, labels, elements, UI controls, or claims. Keep all other text accurate and all existing functional labels 专注阅读, 原稿对照, 知识卡片. All depicted notes are synthetic demonstration content.
+
+## Export workflow
+
+Create a refined Chinese NoteLibrary marketing graphic, landscape 16:10, using the SINGLE most recent image, which is an actual native export window with synthetic water-cycle notes. This is a product workflow composition, not a redesign. Preserve the screenshot's Chinese UI hierarchy, the PDF / Word / Markdown / HTML format choices, emerald accent, real typography and plain macOS-like surface.
+Headline exact: “整理好的笔记，带到你需要的地方。”
+Brand “NoteLibrary” small at top-left with a small emerald books mark.
+Composition: front-facing real export window on the left-middle, clean and legible, taking about 65 percent of image width. Preserve the title 导出笔记, format list PDF / Word / Markdown / HTML, 纸张 selector, 显示页码 and 附上来源 options and 导出 PDF… button. Remove the screenshot's pointer/cursor halo. In the preview pane fit the first PDF page at a comfortable scale to show title 水循环：从一滴水理解系统, concise text, and its original simple three-node water-cycle diagram. Keep PDF selected. DO NOT invent more export options.
+On the right, show four beautifully arranged output artifacts in a tidy two-by-two composition, visibly connected to the export panel with one restrained fine green branching line: a print-like white page labeled PDF; an editable-document page labeled Word; a plain text / Markdown page labeled Markdown; and a compact browser-shaped offline reading page labeled HTML. All contain small consistent synthetic water-cycle content. These are output illustrations, not fake controls. Under each format at most one short existing-use label: PDF “定稿与打印”, Word “继续编辑”, Markdown “迁移与整理”, HTML “离线阅读”. Format words are proper names; all other labels and headline in Chinese.
+Soft warm ivory background, subtle mint glow, crisp forest-green headline, natural daylight and restrained paper shadows. Distinct but cohesive with high-quality study software artwork. A subtle tabletop can ground the paper output, but do not add irrelevant props. Plenty of margin, no cropped headline. No people, no laptop hardware frame, no test scores, no star counts, no extra slogans, no additional file formats, no invented performance or compatibility promises. Original demonstration content only; no personal metadata.
+
+## Export workflow cleanup
+
+Make three precise cleanup edits to the first image, preserving everything else. 1. Replace the incorrect small open-book brand icon at top-left with the exact stacked green books NoteLibrary brand mark from the second reference image; keep the NoteLibrary wordmark. 2. Remove the extra top-right handwritten slogan “好笔记 在更多地方发挥价值” and its underline, restoring the clean warm ivory background. 3. Remove the decorative book stack in the bottom-right corner and restore the natural tabletop/background. Preserve the exact headline “整理好的笔记，带到你需要的地方。”, export-window UI, PDF preview, the four output panels and all their existing Chinese labels and layout. Do not add any new words, slogans, ornaments or claims. Keep the native export UI and original synthetic water-cycle content readable.

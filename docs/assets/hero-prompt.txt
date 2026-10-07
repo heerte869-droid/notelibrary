@@ -1,0 +1,40 @@
+Generation method: built-in image generation, followed by one focused refinement.
+Reference inputs: reading.png and review.png from this directory.
+Only synthetic demonstration content was used.
+
+INITIAL PROMPT
+Use case: ads-marketing / compositing.
+Asset type: premium wide GitHub README hero for the real native macOS app NoteLibrary. Create a polished 2400x1350 landscape promotional composition.
+Input image 1: supporting insert, actual native reading view with original synthetic Chinese water-cycle study content.
+Input image 2: supporting insert, actual native concept-card review view with original synthetic Chinese study content.
+Preserve the authentic Chinese UI and structure within those inserts. Treat them as app preview inserts, not inspiration to invent a new interface.
+
+Art direction: refined editorial software launch campaign. Warm ivory canvas, deep evergreen typography, restrained mint accents; fine pale-green diagram lines, elegant paper depth and subtle soft shadows. Premium tactile paper and precise typography, calm and intellectually inviting. Strong hierarchy and generous breathing room; rich useful content, no clutter. No neon, glow, gradients masquerading as UI, generic AI robot, human model, mascot, fake star counts or fake awards.
+Composition: NoteLibrary wordmark and concise headline in the upper-left/upper band. Below, a large nearly front-facing reading preview as the main visual, and a smaller concept-card preview overlapping its lower-right edge, retaining generous readable scale. A small tasteful fan of source-document sheets on the left connects visually into the reader. Present feature breadth as a beautifully aligned bottom strip of six short labelled capabilities with simple consistent editorial line icons. This strip is marketing artwork, NOT additional application UI controls. Document-format labels may sit on small paper sheets in the import/export motif.
+Text to render verbatim and only as specified:
+"NoteLibrary"
+"Turn your materials"
+"into study notebooks."
+"Native macOS · Your choice of AI"
+Feature labels exactly: "Import", "AI organization", "Read & compare", "Review cards", "Search & images", "Export"
+Format labels exactly: "PDF", "Word", "Markdown", "HTML"
+Use clean contemporary sans serif typography, a confident large heading, beautifully aligned short feature labels. Keep readable at GitHub README width.
+Constraints: Show a believable real product with the two supplied UI previews. Preserve their proportions and their existing Chinese interface; don't invent English product interface, don't add fake buttons. Use both previews with natural surface shadows and minimal perspective, never fish-eye distortion. No user account, private filename, personal photo, email, URL, local path, API key, new logo imitation, paid plan, offline-AI claim, cloud sync claim, cross-platform claim, guaranteed model compatibility claim. The key visual story is materials becoming readable notes and reusable review cards. This is a marketing illustration grounded in supplied real native previews.
+
+FINAL REFINEMENT PROMPT
+Use case: compositing, final refinement of the supplied NoteLibrary GitHub marketing hero.
+Edit the supplied image while preserving the overall composition, the two authentic app-preview windows, the large NoteLibrary heading and headline, native macOS line, and the six-capability strip at the bottom. Keep all these exact text strings and no additional copy:
+"NoteLibrary"
+"Turn your materials"
+"into study notebooks."
+"Native macOS · Your choice of AI"
+"Import", "AI organization", "Read & compare", "Review cards", "Search & images", "Export"
+"PDF", "Word", "Markdown", "HTML"
+
+Make only these focused refinements:
+1. Remove the invented green leaf logo left of NoteLibrary. Keep the clean NoteLibrary wordmark, with no replacement logo. It is not the product's actual logo.
+2. Completely remove the cursive copy in the upper-right ("More reading..."). Let the generous warm ivory negative space remain. Also remove all writing and all logos from the books, cup and any background props. No slogans on props.
+3. Simplify the photographic staging: retain the warm ivory ground, soft daylight and very subtle paper shadows. Reduce the greenery and cup to quiet cropped accents at the extreme edge; do not let decorative objects compete with the product. Emphasize sharp app previews and crisp type.
+4. The paper format labels represent export destinations. Point the small green connecting arrow FROM the app TOWARDS the format sheets (arrowhead on the left near the paper sheets), not into the app.
+The source UI stays Chinese and must not be translated, redesigned, or replaced. Preserve the useful product details, the natural notebook/review content, and the bottom strip positions exactly. Wide landscape professional software launch asset. No extra text, no fake endorsements or statistics, no URLs or private information.
+

@@ -1,0 +1,37 @@
+{
+  "version": "1.6.0",
+  "source": "https://developers.google.com/speed/webp/download",
+  "arm64ArchiveSHA256": "bc6bf84cc70f3f8574fba797d1e4a7dea4feebe9fa4be919f202413ea2b3b8f2",
+  "x86_64ArchiveSHA256": "f112dd83b420ab2a4b27d46610d9827ddf4200216023281de378647ecca31c2a",
+  "universalBinarySHA256": "286f4bdde5486e6dee4f588dd7343fd82d35428178cadb59e109564094266e0b",
+  "arguments": [
+    "-quiet",
+    "-lossless",
+    "-m",
+    "0",
+    "-exact",
+    "-metadata",
+    "all",
+    "-mt"
+  ],
+  "purpose": "Lossless image transport only; no resize or quality reduction.",
+  "binarySliceVerification": {
+    "date": "2026-10-07",
+    "officialArchives": [
+      {
+        "architecture": "arm64",
+        "archiveURL": "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.6.0-mac-arm64.tar.gz",
+        "archiveSHA256": "bc6bf84cc70f3f8574fba797d1e4a7dea4feebe9fa4be919f202413ea2b3b8f2",
+        "cwebpSHA256": "07ba910950253f18ca227d085848ff39be530f6ef22005e778cd48d4850734f2",
+        "matchesBundledSlice": true
+      },
+      {
+        "architecture": "x86-64",
+        "archiveURL": "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.6.0-mac-x86-64.tar.gz",
+        "archiveSHA256": "f112dd83b420ab2a4b27d46610d9827ddf4200216023281de378647ecca31c2a",
+        "cwebpSHA256": "5e3017e6106d331a11e6e1684baa6d60d5a48dc30047018bd142756e29014c28",
+        "matchesBundledSlice": true
+      }
+    ]
+  }
+}

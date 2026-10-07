@@ -1,0 +1,28 @@
+{
+  "project": "Apache POI",
+  "revision": "ae62bb5116b9aee19ebd5834e3a82066132c9f7f",
+  "verified": "2026-10-07",
+  "license": "Apache-2.0",
+  "noticeSource": "https://raw.githubusercontent.com/apache/poi/ae62bb5116b9aee19ebd5834e3a82066132c9f7f/legal/NOTICE",
+  "noticeSHA256": "a89ff8b670bcacd3e98ebee64979e0569181c7942e9ad795f4222b25e5637a61",
+  "files": [
+    {
+      "file": "legacy-basic.ppt",
+      "upstream": "https://raw.githubusercontent.com/apache/poi/ae62bb5116b9aee19ebd5834e3a82066132c9f7f/test-data/slideshow/basic_test_ppt_file.ppt",
+      "sha256": "e8fd4c38ad72ce3735acbca0b60dd5870fb60f819c169e3947d166f4f1bcc79d",
+      "bytes": 15360
+    },
+    {
+      "file": "legacy-reordered.ppt",
+      "upstream": "https://raw.githubusercontent.com/apache/poi/ae62bb5116b9aee19ebd5834e3a82066132c9f7f/test-data/slideshow/incorrect_slide_order.ppt",
+      "sha256": "c9fcede64db56c68d7a2c34667800ee96eae6e4f36a07290c4b47793c7a8bb40",
+      "bytes": 9728
+    },
+    {
+      "file": "legacy-encrypted.ppt",
+      "upstream": "https://raw.githubusercontent.com/apache/poi/ae62bb5116b9aee19ebd5834e3a82066132c9f7f/test-data/slideshow/Password_Protected-hello.ppt",
+      "sha256": "8d0dd9f53317a720687cf5234af0c021fab665194b09b9bb56a3f71b495bf45a",
+      "bytes": 10752
+    }
+  ]
+}

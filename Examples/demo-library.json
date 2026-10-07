@@ -1,0 +1,766 @@
+{
+  "schemaVersion": 1,
+  "contentRevision": 0,
+  "notebooks": [
+    {
+      "id": "demo-book-science",
+      "title": "系统与自然",
+      "subject": "科学",
+      "color": 0,
+      "createdAt": "2026-01-01T09:00:00Z",
+      "summary": "从水循环开始，练习用系统思维理解自然。",
+      "pinned": true
+    },
+    {
+      "id": "demo-book-reading",
+      "title": "观察与表达",
+      "subject": "阅读",
+      "color": 1,
+      "createdAt": "2026-01-01T08:00:00Z",
+      "summary": "用具体细节留下自己的阅读发现。",
+      "pinned": false
+    },
+    {
+      "id": "demo-book-math",
+      "title": "数学手记",
+      "subject": "数学",
+      "color": 2,
+      "createdAt": "2026-01-01T08:00:00Z",
+      "summary": "把题目、过程和关键一步放在一起。",
+      "pinned": false
+    },
+    {
+      "id": "demo-book-design",
+      "title": "设计札记",
+      "subject": "设计",
+      "color": 4,
+      "createdAt": "2026-01-01T08:00:00Z",
+      "summary": "收集清楚、顺手的界面细节。",
+      "pinned": false
+    },
+    {
+      "id": "demo-book-writing",
+      "title": "写作练习",
+      "subject": "写作",
+      "color": 3,
+      "createdAt": "2026-01-01T08:00:00Z",
+      "summary": "从一段短文开始，反复修改。",
+      "pinned": false
+    },
+    {
+      "id": "demo-book-ideas",
+      "title": "灵感备忘",
+      "subject": "想法",
+      "color": 0,
+      "createdAt": "2026-01-01T08:00:00Z",
+      "summary": "为偶然想到的问题留一个位置。",
+      "pinned": false
+    }
+  ],
+  "chapters": [
+    {
+      "id": "demo-chapter-system",
+      "notebookID": "demo-book-science",
+      "title": "看见整个系统",
+      "order": 0,
+      "locked": false
+    },
+    {
+      "id": "demo-chapter-process",
+      "notebookID": "demo-book-science",
+      "title": "关键过程与术语",
+      "order": 1,
+      "locked": false
+    },
+    {
+      "id": "demo-chapter-reading",
+      "notebookID": "demo-book-reading",
+      "title": "开始记录",
+      "order": 0,
+      "locked": false
+    },
+    {
+      "id": "demo-chapter-math",
+      "notebookID": "demo-book-math",
+      "title": "开始记录",
+      "order": 0,
+      "locked": false
+    },
+    {
+      "id": "demo-chapter-design",
+      "notebookID": "demo-book-design",
+      "title": "开始记录",
+      "order": 0,
+      "locked": false
+    },
+    {
+      "id": "demo-chapter-writing",
+      "notebookID": "demo-book-writing",
+      "title": "开始记录",
+      "order": 0,
+      "locked": false
+    },
+    {
+      "id": "demo-chapter-ideas",
+      "notebookID": "demo-book-ideas",
+      "title": "开始记录",
+      "order": 0,
+      "locked": false
+    }
+  ],
+  "notes": [
+    {
+      "id": "demo-note-water",
+      "chapterID": "demo-chapter-system",
+      "title": "水循环：从一滴水理解系统",
+      "blocks": [
+        {
+          "id": "demo-block-01",
+          "kind": "paragraph",
+          "text": "一滴雨水可能进入河流，也可能渗入土壤。把这些去向连起来，就能看见水在海洋、陆地与大气之间持续流动的过程。",
+          "detail": "",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ]
+        },
+        {
+          "id": "demo-block-02",
+          "kind": "heading",
+          "text": "先看整个系统",
+          "detail": "",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ]
+        },
+        {
+          "id": "demo-block-03",
+          "kind": "diagram",
+          "text": "水的储存与流动",
+          "detail": "方框表示储存位置，箭头表示水的转移。太阳能与重力让这个过程持续发生。",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ],
+          "diagram": {
+            "axes": false,
+            "xLabel": "",
+            "yLabel": "",
+            "elements": [
+              {
+                "kind": "box",
+                "points": [
+                  [
+                    0,
+                    30
+                  ],
+                  [
+                    27,
+                    62
+                  ]
+                ],
+                "label": "海洋与湖泊",
+                "style": "primary",
+                "dashed": false
+              },
+              {
+                "kind": "box",
+                "points": [
+                  [
+                    36,
+                    66
+                  ],
+                  [
+                    64,
+                    96
+                  ]
+                ],
+                "label": "大气中的水",
+                "style": "primary",
+                "dashed": false
+              },
+              {
+                "kind": "box",
+                "points": [
+                  [
+                    74,
+                    30
+                  ],
+                  [
+                    100,
+                    62
+                  ]
+                ],
+                "label": "陆地与河流",
+                "style": "primary",
+                "dashed": false
+              },
+              {
+                "kind": "arrow",
+                "points": [
+                  [
+                    24,
+                    65
+                  ],
+                  [
+                    36,
+                    80
+                  ]
+                ],
+                "label": "",
+                "style": "secondary",
+                "dashed": false
+              },
+              {
+                "kind": "label",
+                "points": [
+                  [
+                    20,
+                    85
+                  ]
+                ],
+                "label": "蒸发",
+                "style": "secondary",
+                "dashed": false
+              },
+              {
+                "kind": "arrow",
+                "points": [
+                  [
+                    66,
+                    80
+                  ],
+                  [
+                    82,
+                    65
+                  ]
+                ],
+                "label": "",
+                "style": "primary",
+                "dashed": false
+              },
+              {
+                "kind": "label",
+                "points": [
+                  [
+                    83,
+                    87
+                  ]
+                ],
+                "label": "降水",
+                "style": "primary",
+                "dashed": false
+              },
+              {
+                "kind": "arrow",
+                "points": [
+                  [
+                    74,
+                    25
+                  ],
+                  [
+                    68,
+                    13
+                  ],
+                  [
+                    34,
+                    13
+                  ],
+                  [
+                    27,
+                    25
+                  ]
+                ],
+                "label": "",
+                "style": "muted",
+                "dashed": false
+              },
+              {
+                "kind": "label",
+                "points": [
+                  [
+                    50,
+                    1
+                  ]
+                ],
+                "label": "径流与地下水",
+                "style": "muted",
+                "dashed": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "demo-block-04",
+          "kind": "heading",
+          "text": "分清“在哪里”与“怎样移动”",
+          "detail": "",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ]
+        },
+        {
+          "id": "demo-block-05",
+          "kind": "callout",
+          "text": "储存与流量",
+          "detail": "储存描述某处有多少水；流量描述单位时间内有多少水进入或离开。湖泊是储存位置，流入湖泊的河流代表一种输入。",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ],
+          "reviewQuestion": "湖泊和流入湖泊的河流，分别对应什么系统概念？"
+        },
+        {
+          "id": "demo-block-06",
+          "kind": "term",
+          "text": "蒸发 Evaporation",
+          "detail": "液态水变成水蒸气并进入大气。这个过程需要能量，是海洋向大气输送水的重要途径。",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ]
+        },
+        {
+          "id": "demo-block-07",
+          "kind": "term",
+          "text": "凝结 Condensation",
+          "detail": "水蒸气转变为液态水滴。云中的小水滴可继续增长，满足条件后形成降水。",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ]
+        },
+        {
+          "id": "demo-block-08",
+          "kind": "table",
+          "text": "追踪一场雨的去向",
+          "detail": "",
+          "rows": [
+            [
+              "去向",
+              "发生了什么"
+            ],
+            [
+              "地表径流",
+              "沿地表流入溪流、河流和湖泊"
+            ],
+            [
+              "入渗",
+              "进入土壤，部分继续补给地下水"
+            ],
+            [
+              "暂时储存",
+              "被植被截留或积存在地表"
+            ],
+            [
+              "蒸发",
+              "重新进入大气"
+            ]
+          ],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ]
+        },
+        {
+          "id": "demo-block-09",
+          "kind": "heading",
+          "text": "用一个问题检查理解",
+          "detail": "",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ]
+        },
+        {
+          "id": "demo-block-10",
+          "kind": "paragraph",
+          "text": "为什么强降雨不一定全部变成河流径流？试着用“系统边界、储存、流量”三个词解释。",
+          "detail": "",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ]
+        }
+      ],
+      "tags": [
+        "系统思维",
+        "水循环"
+      ],
+      "sourceIDs": [
+        "demo-source-water"
+      ],
+      "favorite": true,
+      "locked": false,
+      "version": 1,
+      "createdAt": "2026-01-01T09:00:00Z",
+      "updatedAt": "2026-01-01T09:00:00Z"
+    },
+    {
+      "id": "demo-note-process",
+      "chapterID": "demo-chapter-system",
+      "title": "看懂系统的四个角度",
+      "blocks": [
+        {
+          "id": "demo-block-11",
+          "kind": "paragraph",
+          "text": "先确定你研究的是一个湖泊、一条河流还是整个流域，再判断哪些过程属于系统内部。",
+          "detail": "",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ]
+        },
+        {
+          "id": "demo-block-12",
+          "kind": "callout",
+          "text": "系统边界",
+          "detail": "边界决定研究范围。同一股水流，对上游湖泊可能是输出，对下游湖泊却是输入。",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ],
+          "reviewQuestion": "为什么同一股水流可以既是输出，又是输入？"
+        },
+        {
+          "id": "demo-block-13",
+          "kind": "callout",
+          "text": "输入与输出",
+          "detail": "跨越边界进入系统的是输入，离开系统的是输出。研究流域时，降水通常是输入，河流流出与蒸发是输出。",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ],
+          "reviewQuestion": "研究一个流域时，降水和河流流出分别属于什么？"
+        },
+        {
+          "id": "demo-block-14",
+          "kind": "callout",
+          "text": "守恒与变化",
+          "detail": "水不会凭空消失。给定时间内，储量变化等于输入减去输出；判断时需要同时考虑边界和时间范围。",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ],
+          "reviewQuestion": "系统的输入持续大于输出时，储量怎样变化？"
+        },
+        {
+          "id": "demo-block-15",
+          "kind": "callout",
+          "text": "连接与影响",
+          "detail": "系统中的过程彼此联系。地表覆盖改变可能影响入渗，进而改变径流和地下水补给。",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ],
+          "reviewQuestion": "地表覆盖改变为什么可能影响河流径流？"
+        }
+      ],
+      "tags": [
+        "系统思维",
+        "概念"
+      ],
+      "sourceIDs": [
+        "demo-source-water"
+      ],
+      "favorite": false,
+      "locked": false,
+      "version": 1,
+      "createdAt": "2026-01-01T09:00:00Z",
+      "updatedAt": "2026-01-01T09:00:00Z"
+    },
+    {
+      "id": "demo-note-terms",
+      "chapterID": "demo-chapter-process",
+      "title": "四个术语串起一场雨",
+      "blocks": [
+        {
+          "id": "demo-block-16",
+          "kind": "term",
+          "text": "降水 Precipitation",
+          "detail": "水从大气落到地表，形式包括雨、雪等。它连接大气储存与陆地、海洋储存。",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ]
+        },
+        {
+          "id": "demo-block-17",
+          "kind": "term",
+          "text": "入渗 Infiltration",
+          "detail": "水从地表进入土壤的过程。入渗能力受土壤、地表覆盖和已有含水量等条件影响。",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ]
+        },
+        {
+          "id": "demo-block-18",
+          "kind": "term",
+          "text": "径流 Runoff",
+          "detail": "沿地表或河道流动的水。降水只有一部分变成径流，其余可能入渗、储存或蒸发。",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ]
+        },
+        {
+          "id": "demo-block-19",
+          "kind": "term",
+          "text": "流域 Drainage basin",
+          "detail": "地表水汇入同一河流系统的区域。流域边界有助于界定水收支的研究范围。",
+          "rows": [],
+          "origin": "source",
+          "citations": [
+            "demo-source-water"
+          ]
+        }
+      ],
+      "tags": [
+        "术语",
+        "水循环"
+      ],
+      "sourceIDs": [
+        "demo-source-water"
+      ],
+      "favorite": false,
+      "locked": false,
+      "version": 1,
+      "createdAt": "2026-01-01T09:00:00Z",
+      "updatedAt": "2026-01-01T09:00:00Z"
+    },
+    {
+      "id": "demo-note-reading",
+      "chapterID": "demo-chapter-reading",
+      "title": "记下一个值得停留的细节",
+      "blocks": [
+        {
+          "id": "demo-note-reading-paragraph",
+          "kind": "paragraph",
+          "text": "选择一处动作、物件或声音，先写清楚它出现在哪里，再说明它怎样影响了你对这段文字的理解。",
+          "detail": "",
+          "rows": [],
+          "origin": "manual",
+          "citations": []
+        },
+        {
+          "id": "demo-note-reading-concept",
+          "kind": "callout",
+          "text": "观察记录",
+          "detail": "把看到的内容与自己的解释分开写，回看时更容易找到判断的依据。",
+          "rows": [],
+          "origin": "manual",
+          "citations": []
+        }
+      ],
+      "tags": [
+        "阅读"
+      ],
+      "sourceIDs": [],
+      "favorite": false,
+      "locked": false,
+      "version": 1,
+      "createdAt": "2026-01-01T08:00:00Z",
+      "updatedAt": "2026-01-01T08:00:00Z"
+    },
+    {
+      "id": "demo-note-math",
+      "chapterID": "demo-chapter-math",
+      "title": "留住解题的关键一步",
+      "blocks": [
+        {
+          "id": "demo-note-math-paragraph",
+          "kind": "paragraph",
+          "text": "完成一道题后，圈出最关键的转折：是看出了条件之间的关系，还是换了一种表示方式？下次遇到类似问题时，先试着寻找这个入口。",
+          "detail": "",
+          "rows": [],
+          "origin": "manual",
+          "citations": []
+        },
+        {
+          "id": "demo-note-math-concept",
+          "kind": "callout",
+          "text": "条件与结论",
+          "detail": "解题前列出已知条件和目标，推导时记录每一步用了哪个条件。",
+          "rows": [],
+          "origin": "manual",
+          "citations": []
+        }
+      ],
+      "tags": [
+        "数学"
+      ],
+      "sourceIDs": [],
+      "favorite": false,
+      "locked": false,
+      "version": 1,
+      "createdAt": "2026-01-01T08:00:00Z",
+      "updatedAt": "2026-01-01T08:00:00Z"
+    },
+    {
+      "id": "demo-note-design",
+      "chapterID": "demo-chapter-design",
+      "title": "观察一个每天都会点的按钮",
+      "blocks": [
+        {
+          "id": "demo-note-design-paragraph",
+          "kind": "paragraph",
+          "text": "记录按钮所在的位置、文字和反馈，再试着解释这些安排怎样帮助你完成眼前的任务。用真实操作检验自己的判断。",
+          "detail": "",
+          "rows": [],
+          "origin": "manual",
+          "citations": []
+        },
+        {
+          "id": "demo-note-design-concept",
+          "kind": "callout",
+          "text": "操作反馈",
+          "detail": "完成一次操作后，界面应让人看得出发生了什么。观察时同时留意等待、成功和失败三种情况。",
+          "rows": [],
+          "origin": "manual",
+          "citations": []
+        }
+      ],
+      "tags": [
+        "设计"
+      ],
+      "sourceIDs": [],
+      "favorite": false,
+      "locked": false,
+      "version": 1,
+      "createdAt": "2026-01-01T08:00:00Z",
+      "updatedAt": "2026-01-01T08:00:00Z"
+    },
+    {
+      "id": "demo-note-writing",
+      "chapterID": "demo-chapter-writing",
+      "title": "把一段话写具体",
+      "blocks": [
+        {
+          "id": "demo-note-writing-paragraph",
+          "kind": "paragraph",
+          "text": "选取一个简单的场景，只保留能让读者看清动作与关系的细节。写完后删掉重复的形容，检查每一句是否推进了内容。",
+          "detail": "",
+          "rows": [],
+          "origin": "manual",
+          "citations": []
+        },
+        {
+          "id": "demo-note-writing-concept",
+          "kind": "callout",
+          "text": "修改记录",
+          "detail": "保留修改前后的一个句子，写下改变的理由，逐渐积累自己的写作判断。",
+          "rows": [],
+          "origin": "manual",
+          "citations": []
+        }
+      ],
+      "tags": [
+        "写作"
+      ],
+      "sourceIDs": [],
+      "favorite": false,
+      "locked": false,
+      "version": 1,
+      "createdAt": "2026-01-01T08:00:00Z",
+      "updatedAt": "2026-01-01T08:00:00Z"
+    },
+    {
+      "id": "demo-note-ideas",
+      "chapterID": "demo-chapter-ideas",
+      "title": "把想法变成一个小问题",
+      "blocks": [
+        {
+          "id": "demo-note-ideas-paragraph",
+          "kind": "paragraph",
+          "text": "遇到有意思的现象时，先写下观察，再把疑问收成一句可以继续追查的问题。下一次回来时，从这句话开始。",
+          "detail": "",
+          "rows": [],
+          "origin": "manual",
+          "citations": []
+        },
+        {
+          "id": "demo-note-ideas-concept",
+          "kind": "callout",
+          "text": "下一步",
+          "detail": "给想法留一个具体的下一步，例如找一份资料、画一张草图，或比较两个例子。",
+          "rows": [],
+          "origin": "manual",
+          "citations": []
+        }
+      ],
+      "tags": [
+        "想法"
+      ],
+      "sourceIDs": [],
+      "favorite": false,
+      "locked": false,
+      "version": 1,
+      "createdAt": "2026-01-01T08:00:00Z",
+      "updatedAt": "2026-01-01T08:00:00Z"
+    }
+  ],
+  "assets": [
+    {
+      "id": "demo-source-water",
+      "filename": "water-cycle.md",
+      "displayName": "水循环 · 演示原稿.md",
+      "digest": "0425ad03d69c5608c1f30e5046dc78ba7b8880e4c8f75bdbd31b713694d95885",
+      "generated": false,
+      "createdAt": "2026-01-01T09:00:00Z",
+      "byteCount": 993,
+      "document": {
+        "format": "Markdown",
+        "sections": [
+          {
+            "title": "水循环 · 原始材料",
+            "text": "# 水循环：物质如何在系统中流动\n\n水循环连接海洋、陆地和大气。太阳能驱动蒸发，重力使降水、地表径流和地下水继续流动。\n\n## 四个关键过程\n\n- 蒸发：液态水进入大气，成为水蒸气。\n- 凝结：水蒸气冷却后形成液态水滴；云中也可能有冰晶。\n- 降水：云中的水以雨、雪等形式落向地表。\n- 径流与入渗：一部分水沿地表流动，另一部分进入土壤和地下。\n\n## 储存与流量\n\n海洋、湖泊、冰川、土壤和地下含水层都是水的储存位置。蒸发、降水和径流是这些储存之间的流动。研究一个流域时，应明确系统边界，再比较输入、输出和储量变化。\n\n## 检查理解\n\n为什么一次强降雨不一定都转变成河流中的径流？因为水还可能被植被截留、入渗土壤、暂时储存或重新蒸发。\n\n---\n\n本材料由 NoteLibrary 项目编写，用于公开演示，不包含个人笔记或课程资料。\n"
+          }
+        ],
+        "usedOCR": false
+      }
+    }
+  ],
+  "conversations": [],
+  "receipts": [],
+  "committedTaskIDs": [],
+  "settings": {
+    "codexPath": "",
+    "defaultModel": "gpt-6-astra",
+    "defaultEffort": "medium",
+    "defaultProvider": "none",
+    "profiles": [],
+    "routes": {},
+    "language": "简体中文",
+    "detail": "适度补充解释和例子",
+    "onlineVerification": false,
+    "appearance": "light",
+    "fontSize": 16,
+    "lineSpacing": 7,
+    "readingWidth": 800,
+    "showOriginal": false,
+    "reduceMotion": false,
+    "enterSends": false,
+    "automaticSnapshots": true,
+    "notifications": false
+  }
+}

@@ -1,0 +1,23 @@
+* text=auto
+*.swift text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.xml text eol=lf
+*.pbxproj text eol=lf
+*.xcscheme text eol=lf
+*.svg text eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.pptx binary
+*.ppt binary
+*.woff2 binary
+Resources/Tools/cwebp binary

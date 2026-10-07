@@ -1,0 +1,102 @@
+{
+  "licenseFiles": [
+    {
+      "file": "libpng-LICENSE.txt",
+      "upstream": "https://raw.githubusercontent.com/pnggroup/libpng/v1.6.47/LICENSE",
+      "sha256": "16d9daaafbf63a31a5bdc91d4600972548fef5aaa1244202393288dbd079c49a",
+      "retrieved": "2026-10-07"
+    },
+    {
+      "file": "libjpeg-turbo-LICENSE.md",
+      "upstream": "https://raw.githubusercontent.com/libjpeg-turbo/libjpeg-turbo/3.1.0/LICENSE.md",
+      "sha256": "96f5b328adbb78eeaaec6980d73fd558cb1e4d62560ed615646bc3cf5e532430",
+      "retrieved": "2026-10-07"
+    },
+    {
+      "file": "libjpeg-turbo-README.ijg",
+      "upstream": "https://raw.githubusercontent.com/libjpeg-turbo/libjpeg-turbo/3.1.0/README.ijg",
+      "sha256": "75815e3bf6484201a3c3d17a1bbf10f2e8e3237f84df10a2357ea896db2a81d6",
+      "retrieved": "2026-10-07"
+    },
+    {
+      "file": "zlib-LICENSE.txt",
+      "upstream": "https://raw.githubusercontent.com/madler/zlib/v1.3.1/LICENSE",
+      "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+      "retrieved": "2026-10-07"
+    },
+    {
+      "file": "libtiff-LICENSE.md",
+      "upstream": "https://gitlab.com/libtiff/libtiff/-/raw/v4.7.0/LICENSE.md",
+      "sha256": "0780558a8bfba0af1160ec1ff11ade4f41c0d7deafd6ecfc796b492a788e380d",
+      "retrieved": "2026-10-07"
+    },
+    {
+      "file": "zstd-LICENSE.txt",
+      "upstream": "https://raw.githubusercontent.com/facebook/zstd/v1.5.6/LICENSE",
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8",
+      "retrieved": "2026-10-07"
+    },
+    {
+      "file": "xz-COPYING.txt",
+      "upstream": "https://raw.githubusercontent.com/tukaani-project/xz/v5.8.1/COPYING",
+      "sha256": "616a3ad264ce29b8f1cb97e53037b139d406899ca8d1f799651e17bfa09830b8",
+      "retrieved": "2026-10-07"
+    },
+    {
+      "file": "xz-COPYING.0BSD.txt",
+      "upstream": "https://raw.githubusercontent.com/tukaani-project/xz/v5.8.1/COPYING.0BSD",
+      "sha256": "0b01625d853911cd0e2e088dcfb743261034a091bb379246cb25a14cc4c74bf1",
+      "retrieved": "2026-10-07"
+    },
+    {
+      "file": "KaTeX-fonts-MIT.txt",
+      "upstream": "https://raw.githubusercontent.com/KaTeX/katex-fonts/56e79c93c88c9054b017cc92e496b383e0bf82d7/LICENSE",
+      "sha256": "a7bd44abd8419bf78185be51f34216356af1adb0806ce39d6a9ca0940bd49b70",
+      "retrieved": "2026-10-07",
+      "revision": "56e79c93c88c9054b017cc92e496b383e0bf82d7"
+    },
+    {
+      "file": "MacPaw-OpenAI-MIT.txt",
+      "upstream": "https://raw.githubusercontent.com/MacPaw/OpenAI/c155b5245243f4984791bbe2db80be509b00854a/LICENSE",
+      "sha256": "df47b25ac5f12c7acfbf3f415e521a9fad9331eb6e2e27c182e2720804f2fff0",
+      "verified": "2026-10-07",
+      "matchesPinnedUpstream": true
+    },
+    {
+      "file": "swift-openapi-runtime-LICENSE.txt",
+      "upstream": "https://raw.githubusercontent.com/apple/swift-openapi-runtime/50ad7976f18fec6c09466d2aebf7be3dc9476cfb/LICENSE.txt",
+      "sha256": "8c6db340475136df3c1201d458fa5755698eace76e510471ecc9d857d6083dac",
+      "verified": "2026-10-07",
+      "matchesPinnedUpstream": true
+    },
+    {
+      "file": "swift-openapi-runtime-NOTICE.txt",
+      "upstream": "https://raw.githubusercontent.com/apple/swift-openapi-runtime/50ad7976f18fec6c09466d2aebf7be3dc9476cfb/NOTICE.txt",
+      "sha256": "b54b35c36f1cde851867e5dffc843d379456d202d332f04ae8d877232359925c",
+      "verified": "2026-10-07",
+      "matchesPinnedUpstream": true
+    },
+    {
+      "file": "swift-http-types-LICENSE.txt",
+      "upstream": "https://raw.githubusercontent.com/apple/swift-http-types/bff4b6903cdc99dda49649dd52f46c11cfd3ed50/LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verified": "2026-10-07",
+      "matchesPinnedUpstream": true
+    },
+    {
+      "file": "swift-http-types-NOTICE.txt",
+      "upstream": "https://raw.githubusercontent.com/apple/swift-http-types/bff4b6903cdc99dda49649dd52f46c11cfd3ed50/NOTICE.txt",
+      "sha256": "eb79190094094bb6ce2b177a7ba7708f50bf873b9a2c5e6e1936a5f391b5ec0f",
+      "verified": "2026-10-07",
+      "matchesPinnedUpstream": true
+    },
+    {
+      "file": "LiteLLM-MIT.txt",
+      "upstream": "https://raw.githubusercontent.com/BerriAI/litellm/d80f8c28ca7e2fba4257b4b97457d3b313ff0d6a/LICENSE",
+      "sha256": "b170d6bf8e8835dd357e011681db028f4d51e2fb0ea892058f56e01fb39b8273",
+      "verified": "2026-10-07",
+      "matchesPinnedUpstream": true
+    }
+  ],
+  "note": "License source tags identify the copied legal text. See Tools/THIRD_PARTY.md for binary component version evidence and unresolved provenance."
+}
