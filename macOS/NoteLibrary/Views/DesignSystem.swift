@@ -404,19 +404,7 @@ struct ChoiceHost: ViewModifier {
                         PointerObserver(onDown: { point, _, _ in
                             if !menuRect.contains(point) && !item.rect.contains(point) { center.dismiss() }
                         }, onEscape: { center.dismiss(restoreFocus: true) }, onKey: { event in
-                            guard !ownsError, event.modifierFlags.intersection([.command, .control, .option]).isEmpty else { return false }
-                            let enabled = (center.filteredOptions ?? item.options).filter { !$0.disabled }
-                            guard !enabled.isEmpty else { return false }
-                            if event.keyCode == 125 || event.keyCode == 126 {
-                                let index = enabled.firstIndex { $0.id == center.highlighted } ?? enabled.firstIndex { $0.id == item.selected }
-                                let next = event.keyCode == 125 ? index.map { ($0 + 1) % enabled.count } ?? 0 : index.map { ($0 + enabled.count - 1) % enabled.count } ?? (enabled.count - 1)
-                                center.highlighted = enabled[next].id; center.keyboardNavigation += 1
-                                return true
-                            }
-                            if [36, 76].contains(event.keyCode), let id = center.highlighted, enabled.contains(where: { $0.id == id }) {
-                                center.presentation = nil; item.choose(id); return true
-                            }
-                            return false
+                            handleKey(event, item: item)
                         }).allowsHitTesting(false)
                     }
                 }.animation(reduced || model.library.settings.reduceMotion ? nil : .easeOut(duration: 0.10), value: center.presentation?.sourceID)
@@ -434,6 +422,23 @@ struct ChoiceHost: ViewModifier {
                     }.environment(\.isEnabled, true).accessibilityHidden(false).onExitCommand { model.error = nil }
                 }
             }
+    }
+    private func handleKey(_ event: NSEvent, item: ChoiceCenter.Presentation) -> Bool {
+        guard !ownsError, event.modifierFlags.intersection([.command, .control, .option]).isEmpty else { return false }
+        let enabled = (center.filteredOptions ?? item.options).filter { !$0.disabled }
+        guard !enabled.isEmpty else { return false }
+        if event.keyCode == 125 || event.keyCode == 126 {
+            let index = enabled.firstIndex { $0.id == center.highlighted } ?? enabled.firstIndex { $0.id == item.selected }
+            let next: Int
+            if event.keyCode == 125 { next = index.map { ($0 + 1) % enabled.count } ?? 0 }
+            else { next = index.map { ($0 + enabled.count - 1) % enabled.count } ?? (enabled.count - 1) }
+            center.highlighted = enabled[next].id; center.keyboardNavigation += 1
+            return true
+        }
+        if [36, 76].contains(event.keyCode), let id = center.highlighted, enabled.contains(where: { $0.id == id }) {
+            center.presentation = nil; item.choose(id); return true
+        }
+        return false
     }
 }
 private struct MenuRowStyle: ButtonStyle {
@@ -494,15 +499,16 @@ private struct ChoicePanel: View {
                 }
                 .onChange(of: query) { _, _ in center.highlighted = nil; center.filteredOptions = options; proxy.scrollTo("choices-top", anchor: .top) }
                 .onDisappear { center.filteredOptions = nil }
-                .onMoveCommand { direction in
-                    let enabled = options.filter { !$0.disabled }; guard !enabled.isEmpty else { return }
-                    let index = enabled.firstIndex { $0.id == center.highlighted }
-                    if direction == .down { center.highlighted = enabled[index.map { ($0 + 1) % enabled.count } ?? 0].id }
-                    if direction == .up { center.highlighted = enabled[index.map { ($0 + enabled.count - 1) % enabled.count } ?? (enabled.count - 1)].id }
-                }
+                .onMoveCommand { move($0) }
                 .onChange(of: center.keyboardNavigation) { _, _ in if scrollable, let id = center.highlighted { proxy.scrollTo(id, anchor: .center) } }
                 .onKeyPress(.return) { guard let id = center.highlighted, options.contains(where: { $0.id == id && !$0.disabled }) else { return .ignored }; select(id); return .handled }
         }
+    }
+    private func move(_ direction: MoveCommandDirection) {
+        let enabled = options.filter { !$0.disabled }; guard !enabled.isEmpty else { return }
+        let index = enabled.firstIndex { $0.id == center.highlighted }
+        if direction == .down { center.highlighted = enabled[index.map { ($0 + 1) % enabled.count } ?? 0].id }
+        if direction == .up { center.highlighted = enabled[index.map { ($0 + enabled.count - 1) % enabled.count } ?? (enabled.count - 1)].id }
     }
     private var rows: some View {
         VStack(spacing: 0) {
